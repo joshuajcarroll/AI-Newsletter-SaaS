@@ -1,5 +1,7 @@
+import { CTA } from "@/components/landing/cta";
 import { Features } from "@/components/landing/features";
 import { Hero } from "@/components/landing/hero";
+import { HowItWorks } from "@/components/landing/how-it-works";
 import { SignedIn, UserButton } from "@clerk/nextjs";
 
 export default function Home() {
@@ -7,7 +9,7 @@ export default function Home() {
     <main className="min-h-screen bg-white dark:bg-black">
       <Hero />
       <Features />
-      {/*<HowItWorks />*/}
+      <HowItWorks />
 
       <SignedIn>
         <div className="fixed top-4 right-4">
@@ -15,8 +17,8 @@ export default function Home() {
         </div>
       </SignedIn>
 
-      {/*<Pricing />
-      <CTA />*/}
+      {/*<Pricing />*/}
+      <CTA />
     </main>
   );
 }
